@@ -5,14 +5,14 @@
 #                                                     +:+ +:+         +:+      #
 #    By: roversch <roversch@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2024/11/07 15:21:20 by roversch          #+#    #+#              #
-#    Updated: 2025/02/17 14:05:14 by roversch         ###   ########.fr        #
+#    Created: 2025/02/17 13:55:47 by roversch          #+#    #+#              #
+#    Updated: 2025/02/17 14:06:23 by roversch         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = libft_printf.a
+NAME = libft_gnl.a
 SRCDIR = source
-SRCLIT = ft_printf.c printf_base10.c printf_base16.c printf_chars.c
+SRCLIT = get_next_line.c get_next_line_utils.c
 SRCS	= $(addprefix $(SRCDIR)/,$(SRCLIT))
 OBJ		= $(SRCS:.c=.o)
 CC = cc

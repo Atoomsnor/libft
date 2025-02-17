@@ -6,7 +6,7 @@
 #    By: roversch <roversch@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/22 15:49:19 by roversch          #+#    #+#              #
-#    Updated: 2025/02/17 13:50:06 by roversch         ###   ########.fr        #
+#    Updated: 2025/02/17 14:10:25 by roversch         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,10 +28,14 @@ INCLUDE = -I ./include
 PRINTF_DIR = printf
 PRINTF_NAME = printf.a
 
+GNL_DIR = get_next_line
+GNL_NAME = get_next_line.a
+
 all: $(NAME)
 
 $(NAME): $(OBJ)
 	@$(MAKE) -C $(PRINTF_DIR)
+	@$(MAKE) -C $(GNL_DIR)
 	@ar rc $(NAME) $(OBJ)
 
 %.o: %.c
@@ -40,10 +44,12 @@ $(NAME): $(OBJ)
 clean:
 	@rm -f $(OBJ)
 	@$(MAKE) -C $(PRINTF_DIR) clean
+	@$(MAKE) -C $(GNL_DIR) clean
 
 fclean: clean
 	@rm -f $(NAME)
 	@$(MAKE) -C $(PRINTF_DIR) fclean
+	@$(MAKE) -C $(GNL_DIR) fclean
 
 re: fclean all
 
