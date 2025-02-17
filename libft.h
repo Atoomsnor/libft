@@ -6,7 +6,7 @@
 /*   By: roversch <roversch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 15:49:12 by roversch          #+#    #+#             */
-/*   Updated: 2024/11/11 14:54:17 by roversch         ###   ########.fr       */
+/*   Updated: 2025/02/17 13:49:44 by roversch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 
 int		ft_strlen(const char *c);
 int		ft_atoi(const char *nptr);
+long	ft_atol(const char *nptr);
 char	*ft_itoa(int n);
 int		ft_isalnum(int c);
 int		ft_isalpha(int c);
